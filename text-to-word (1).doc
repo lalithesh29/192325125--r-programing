@@ -1,0 +1,54 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Text To Word</title></head><body><p>01.code: name &lt;- readline(prompt = "Enter your name: ")</p>
+<p>age &lt;- as.integer(readline(prompt = "Enter your age: "))</p>
+<p>&nbsp;cat("Name:", name, "\n")</p>
+<p>cat("Age:", age, "\n")</p>
+<p>&nbsp;cat("R version:", R.version.string, "\n")</p>
+<p>output:</p>
+<p>&nbsp;Enter your name:</p>
+<p>&nbsp;Enter your age:</p>
+<p>&nbsp;Name: Age:</p>
+<p>&nbsp;NA R version: R version 4.2.3 (2023-03-15) === Code Execution Successful =================</p>
+<p>&nbsp;</p>
+<p>&nbsp;02.</p>
+<p>&nbsp; code: objects_info &lt;- ls() cat("Objects in memory:\n")</p>
+<p>print(objects_info) for (obj in objects_info)</p>
+<p>&nbsp;{ cat("\nDetails of object:", obj, "\n")</p>
+<p>&nbsp; &nbsp;print(str(get(obj)))</p>
+<p>&nbsp;}</p>
+<p>&nbsp;output: Objects in memory: character(0)</p>
+<p>&nbsp;== Code Execution Successful ===</p>
+<p>&nbsp;</p>
+<p>&nbsp;03.code:</p>
+<p>sequence_20_to_50 &lt;- 20:50 mean_20_to_60 &lt;- mean(20:60)</p>
+<p>&nbsp;sum_51_to_91 &lt;- sum(51:91)</p>
+<p>&nbsp;cat("Mean of numbers from 20 to 60:", mean_20_to_60, "\n")</p>
+<p>&nbsp;cat("Sum of numbers from 51 to 91:", sum_51_to_91, "\n")</p>
+<p>&nbsp;output:</p>
+<p>Mean of numbers from 20 to 60: 40 Sum of numbers from 51 to 91: 2911</p>
+<p>&nbsp;=== Code Execution Successful ===</p>
+<p>04.code:</p>
+<p>set.seed(123) random_integers &lt;- sample(-50:50, 10)</p>
+<p>cat("Random integers between -50 and +50:\n")</p>
+<p>print(random_integers)</p>
+<p>&nbsp;output:</p>
+<p>&nbsp;Random integers between -50 and +50: [1] -20 28 0 -37 16 -9 -1 -8 47 -26</p>
+<p>=== Code Execution Successful ===</p>
+<p>05.code:</p>
+<p>&nbsp;int main()</p>
+<p>{</p>
+<p>&nbsp; int n = 10; int fib[n];</p>
+<p>&nbsp;fib[0] = 0; fib[1] = 1;</p>
+<p>for (int i = 2; i &lt; n; i++)</p>
+<p>&nbsp;{</p>
+<p>&nbsp; &nbsp;fib[i] = fib[i - 1] + fib[i - 2];</p>
+<p>&nbsp; }</p>
+<p>printf("First 10 Fibonacci numbers:\n");</p>
+<p>for (int i = 0; i &lt; n; i++)</p>
+<p>&nbsp;{</p>
+<p>&nbsp; &nbsp;printf("%d ", fib[i]);</p>
+<p>&nbsp; } printf("\n");</p>
+<p>&nbsp;return 0;</p>
+<p>}</p>
+<p>&nbsp;output:</p>
+<p>&nbsp;Mean of numbers from 20 to 60: 40 Sum of numbers from 51 to 91: 2911</p>
+<p>&nbsp;=== Code Execution Successful ===</p></body></html>
