@@ -1,0 +1,98 @@
+#first program
+matrix1 <- matrix(1:6, nrow = 2, ncol = 3)
+matrix2 <- matrix(7:12, nrow = 2, ncol = 3)
+combined_cbind <- cbind(matrix1, matrix2)
+print("Combined using cbind():")
+print(combined_cbind)
+combined_rbind <- rbind(matrix1, matrix2)
+print("Combined using rbind():")
+print(combined_rbind)
+#output
+"Combined using cbind():"
+     [,1] [,2] [,3] [,4] [,5] [,6]
+[1,]    1    3    5    7    9   11
+[2,]    2    4    6    8   10   12
+[1] "Combined using rbind():"
+     [,1] [,2] [,3]
+[1,]    1    3    5
+[2,]    2    4    6
+[3,]    7    9   11
+[4,]    8   10   12
+
+
+
+#second program
+numeric_vector <- c(1.1, 2.2, 3.3, 4.4, 5.5, 6.6)
+complex_vector <- c(1+2i, 2+3i, 3+4i, 4+5i, 5+6i, 6+7i)
+logical_vector <- c(TRUE, FALSE, TRUE, FALSE, TRUE, FALSE)
+character_vector <- c("a", "b", "c", "d", "e", "f")
+print("Numeric Vector:")
+print(numeric_vector)
+print("Complex Vector:")
+print(complex_vector)
+print("Logical Vector:")
+print(logical_vector)
+print("Character Vector:")
+print(character_vector)
+#output
+"Numeric Vector:"
+[1] 1.1 2.2 3.3 4.4 5.5 6.6
+[1] "Complex Vector:"
+[1] 1+2i 2+3i 3+4i 4+5i 5+6i 6+7i
+[1] "Logical Vector:"
+[1]  TRUE FALSE  TRUE FALSE  TRUE FALSE
+[1] "Character Vector:"
+[1] "a" "b" "c" "d" "e" "f"
+
+
+#third program
+price_rice <- 40.75
+price_sugar <- 30
+quantity_rice <- 2 
+quantity_sugar <- 5 
+total_amount <- (price_rice * quantity_rice) + (price_sugar * quantity_sugar)
+cat("Total amount for 2kg rice and 5kg sugar: Rs.", total_amount, "\n")
+#output
+Total amount for 2kg rice and 5kg sugar: Rs. 231.5 
+[1] "Original Matrix:"
+
+
+
+#fouth program
+set.seed(123) 
+random_matrix <- matrix(sample(1:100, 12), nrow = 3, ncol = 4, byrow = TRUE)
+colnames(random_matrix) <- c("uno", "dos", "tres", "cuatro")
+rownames(random_matrix) <- c("x", "y", "z")
+print("Original Matrix:")
+print(random_matrix)
+scaled_matrix <- random_matrix * 10
+print("Scaled Matrix:")
+print(scaled_matrix)
+#output
+ uno dos tres cuatro
+x  31  79   51     14
+y  67  42   50     43
+z  97  25   90     69
+[1] "Scaled Matrix:"
+  uno dos tres cuatro
+x 310 790  510    140
+y 670 420  500    430
+z 970 250  900    690
+
+
+
+#fifth program
+employee <- list(name = "Alice", age = 28, salary = 50000)
+class(employee) <- "Employee"
+print.Employee <- function(obj) {
+  cat("Employee Details:\n")
+  cat("Name   :", obj$name, "\n")
+  cat("Age    :", obj$age, "\n")
+  cat("Salary :", obj$salary, "\n")
+}
+print(employee)
+#output
+Employee Details:
+Name   : Alice 
+Age    : 28 
+Salary : 50000
