@@ -1,0 +1,67 @@
+#first program
+n <- 100
+primes <- rep(TRUE, n)
+primes[1] <- FALSE # 1 is not a prime number
+for (i in 2:floor(sqrt(n))) {
+  if (primes[i]) {
+    primes[seq(i^2, n, i)] <- FALSE
+  }
+}
+print(which(primes))
+#output
+ 2  3  5  7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+
+#second program
+for (i in 1:10) {
+  if (i %% 3 == 0 && i %% 5 == 0) {
+    print("FizzBuzz")
+  } else if (i %% 3 == 0) {
+    print("Fizz")
+  } else if (i %% 5 == 0) {
+    print("Buzz")
+  } else {
+    print(i)
+  }
+}
+#output
+[1] 1
+[1] 2
+[1] "Fizz"
+[1] 4
+[1] "Buzz"
+[1] "Fizz"
+[1] 7
+[1] 8
+[1] "Fizz"
+[1] "Buzz"
+
+#third program
+first_10_lower <- letters[1:10]
+print(first_10_lower)
+last_10_upper <- LETTERS[17:26]
+print(last_10_upper)
+specific_upper <- LETTERS[22:24]
+print(specific_upper)
+#output
+[1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j"
+ [1] "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+[1] "V" "W" "X"
+
+
+#fourth program
+num <- 36
+factors <- which(num %% 1:num == 0)
+print(factors)
+#output
+ 1  2  3  4  6  9 12 18 36
+ 
+ 
+ #fifth program
+ vec <- c(3, 7, 2, 9, 5, -1, 0)
+max_value <- max(vec)
+print(max_value)
+min_value <- min(vec)
+print(min_value)
+#output
+max=9
+min=-1
