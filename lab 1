@@ -1,0 +1,51 @@
+1> first program
+name <- readline(prompt = "Enter your name: ")
+age <- as.integer(readline(prompt = "Enter your age: "))
+cat("Name:", name, "\n")
+cat("Age:", age, "\n")
+cat("R version installed:", R.version.string, "\n")
+#output:
+Enter your name: 
+Enter your age: 
+Name:  
+Age: NA 
+R version installed: R version 4.2.3 (2023-03-15) 
+
+2> second program
+print(ls())
+print(ls.str())
+#output:
+"age"  "name"
+age :  int NA
+name :  chr ""
+
+
+3>third program
+sequence_20_50 <- 20:50
+print(sequence_20_50)
+mean_20_60 <- mean(20:60)
+cat("Mean of numbers from 20 to 60:", mean_20_60, "\n")
+sum_51_91 <- sum(51:91)
+cat("Sum of numbers from 51 to 91:", sum_51_91, "\n")
+#output:
+ 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44
+[26] 45 46 47 48 49 50
+Mean of numbers from 20 to 60: 40 
+Sum of numbers from 51 to 91: 2911 
+
+4>fourth program
+random_integers <- sample(-50:50, 10, replace = TRUE)
+print(random_integers)
+#output:
+20 -12  34 -29 -18 -12 -39 -48 -10 -16
+
+5>ffifth program
+fibonacci <- numeric(10)
+fibonacci[1] <- 0
+fibonacci[2] <- 1
+for (i in 3:10) {
+  fibonacci[i] <- fibonacci[i - 1] + fibonacci[i - 2]
+}
+print(fibonacci)
+#output:
+0  1  1  2  3  5  8 13 21 34
