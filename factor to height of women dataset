@@ -1,0 +1,12 @@
+code
+data("women")
+height_factor_custom <- factor(women$height, 
+                                levels = unique(women$height), 
+                                labels = paste("Height:", unique(women$height), "cm"))
+print(height_factor_custom)
+
+output
+ [1] Height: 58 cm Height: 59 cm Height: 60 cm Height: 61 cm Height: 62 cm
+ [6] Height: 63 cm Height: 64 cm Height: 65 cm Height: 66 cm Height: 67 cm
+[11] Height: 68 cm Height: 69 cm Height: 70 cm Height: 71 cm Height: 72 cm
+15 Levels: Height: 58 cm Height: 59 cm Height: 60 cm ... Height: 72 cm
