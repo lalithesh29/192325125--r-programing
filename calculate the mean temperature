@@ -1,0 +1,17 @@
+code
+data(airquality)
+calculate_mean_temp <- function(data) {
+  total_temp <- 0
+  count <- 0
+  for (temp in data$Temp) {
+    total_temp <- total_temp + temp
+    count <- count + 1
+  }
+  mean_temp <- total_temp / count
+  return(mean_temp)
+}
+mean_temperature <- calculate_mean_temp(airquality)
+print(mean_temperature)
+
+output
+[1] 77.88235
